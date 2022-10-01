@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		784B1FF328E84B5900D09CE4 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B1FF228E84B5900D09CE4 /* SplashScreen.swift */; };
+		784B1FF628E84CC900D09CE4 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B1FF528E84CC900D09CE4 /* HomePage.swift */; };
+		784B1FFC28E8550300D09CE4 /* IntroductionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B1FFB28E8550300D09CE4 /* IntroductionScreen.swift */; };
 		78C3E33928E7587600942A91 /* GimbalAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C3E33828E7587600942A91 /* GimbalAppApp.swift */; };
 		78C3E33B28E7587600942A91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C3E33A28E7587600942A91 /* ContentView.swift */; };
 		78C3E33D28E7587700942A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C3E33C28E7587700942A91 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		784B1FF228E84B5900D09CE4 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		784B1FF528E84CC900D09CE4 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		784B1FFB28E8550300D09CE4 /* IntroductionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionScreen.swift; sourceTree = "<group>"; };
 		78C3E33528E7587600942A91 /* GimbalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GimbalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C3E33828E7587600942A91 /* GimbalAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalAppApp.swift; sourceTree = "<group>"; };
 		78C3E33A28E7587600942A91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784B1FF128E84A7D00D09CE4 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				784B1FF228E84B5900D09CE4 /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		784B1FF428E84B7C00D09CE4 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				784B1FF528E84CC900D09CE4 /* HomePage.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		784B1FF728E853D200D09CE4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				784B1FF828E854DB00D09CE4 /* Introduction */,
+				784B1FF428E84B7C00D09CE4 /* HomeScreen */,
+				784B1FF128E84A7D00D09CE4 /* SplashScreen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		784B1FF828E854DB00D09CE4 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				784B1FFB28E8550300D09CE4 /* IntroductionScreen.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
 		78C3E32C28E7587600942A91 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +91,7 @@
 		78C3E33728E7587600942A91 /* GimbalApp */ = {
 			isa = PBXGroup;
 			children = (
+				784B1FF728E853D200D09CE4 /* UI */,
 				78C3E33828E7587600942A91 /* GimbalAppApp.swift */,
 				78C3E33A28E7587600942A91 /* ContentView.swift */,
 				78C3E33C28E7587700942A91 /* Assets.xcassets */,
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784B1FF328E84B5900D09CE4 /* SplashScreen.swift in Sources */,
 				78C3E33B28E7587600942A91 /* ContentView.swift in Sources */,
 				78C3E33928E7587600942A91 /* GimbalAppApp.swift in Sources */,
+				784B1FFC28E8550300D09CE4 /* IntroductionScreen.swift in Sources */,
+				784B1FF628E84CC900D09CE4 /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

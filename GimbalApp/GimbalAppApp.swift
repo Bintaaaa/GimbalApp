@@ -11,7 +11,7 @@ import SwiftUI
 struct GimbalAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
     }
 }
