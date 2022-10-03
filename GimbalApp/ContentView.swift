@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    init(){
+        UITabBar.appearance().barTintColor = .systemBackground
+    }
+    @State var selectedIndex = 0
+    let tabBarImages = ["house", "magnifyingglass", "person"]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            ZStack{
+                switch selectedIndex{
+                    case 0:
+                        HomePage()
+                    default:
+                        Text("test")
+                }
+            }
+            
+            Spacer()
+            HStack{
+            ForEach(0..<3){num in
+                Button(action: {
+                    selectedIndex = num
+                }, label: {
+                    Spacer()
+                    Image(systemName: tabBarImages[num]).font(.system(size: 24, weight: .bold
+                        )
+                        
+                    ).foregroundColor(selectedIndex == num ? Color(.black) : .init(white: 0.7)
+                    )
+                        Spacer()
+                })
+                }
+            }
+            
         }
-        .padding()
     }
 }
 

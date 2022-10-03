@@ -11,7 +11,7 @@ struct IntroductionScreen: View {
     @State var isLinkActive = false
     var body: some View {
         if self.isLinkActive{
-            HomePage()
+            ContentView()
         }else{
             VStack {
                 Image("introduction").padding(
